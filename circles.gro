@@ -44,15 +44,15 @@ program sensor() := {
   };
   f1 ( get_signal ( leadSig ) ) : { 
     rfp := rfp + 1,    
-    // set ( "ecoli_growth_rate", 0.05 )
+    set ( "ecoli_growth_rate", 0.05 )
   };
   f2 ( get_signal ( leadSig ) ) : { 
     gfp := gfp + 1,    
-    // set ( "ecoli_growth_rate", 0.03 )
+    set ( "ecoli_growth_rate", 0.03 )
    };
   f3 ( get_signal ( leadSig ) ) : { 
     yfp := yfp + 1,
-    // set ( "ecoli_growth_rate", 0.01 )
+    set ( "ecoli_growth_rate", 0.01 )
   };
   f4 ( get_signal ( leadSig ) ) : { 
     set ( "ecoli_growth_rate", 0.0 )
