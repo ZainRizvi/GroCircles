@@ -3,7 +3,7 @@ include gro
 set ( "dt", 0.1 );
 set ( "population_max", 1500);
 
-leadSig := signal ( 1, 0.1 ); // args = diffusion rate and degradation rate
+leadSig := signal ( 1, 0.05 ); // args = diffusion rate and degradation rate
 crowd := signal ( 2, 0.5);
 
 fun f0 a . 3.5 > a;
