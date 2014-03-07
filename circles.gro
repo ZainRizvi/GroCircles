@@ -69,14 +69,14 @@ program sensor() := {
   }
   
   p.m = SENDER : {
-    emit_signal ( leadSig, 100 ),
+    emit_signal ( leadSig, 150 ),
     set ( "ecoli_growth_rate", 0 ),  
     yfp := 100
   };
   
   p.m = RECEIVER : {
     emit_signal ( crowd, 10 ),  
-	tumble (30)
+	tumble (200)
   }
   
   // fdie ( get_signal ( leadSig ) ) : { 
